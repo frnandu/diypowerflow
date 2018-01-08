@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+      background-image:
+        radial-gradient(
+          #2c2c2c,
+          #010101
+        );
+}
+
+#solar, #powerwall {
+    display : block;
+    margin: auto;
+}
+
+.cell {
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.left, .right {
+    height:100%;
+    top: 33px;
+    bottom: 0px;
+    position: fixed;
+    display: table;
+    margin:0 20px;
+}
+
+.left{
+  left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.center {
+    text-align:center;
+}
+
+p {
+	font-size: 14px;
+}
+
+text {
+	font-size: 18px;
+}
+
+p, text, h3 {
+    color:#a9acae;
+    fill: #a9acae;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+	text-align: right;
+	margin:10px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+.middle {
+    height: calc(100% - 370px);
+    margin-top: -7px;
+    margin-bottom: -7px;
+}
+
+#lines {
+    height: 100%;
+    margin-left:125px;
+    margin-right:125px;
+}
+
+#lines .off {
+    display:none;
+}
+
+/**** OFF ****/
+svg image {
+    opacity : .5;
+}
+svg .hollow {
+    display:none;
+}
+svg text {
+    display:none;
+}
+
+svg circle {
+    stroke: #a9acae;
+}
+
+#lines rect {
+    display:none;
+}
+
+#lines g {
+    display: none;
+}
+
+/**** ON ****/
+
+svg.on image {
+    opacity : 1;
+}
+
+svg.on .hollow {
+    display:block;
+}
+
+svg.on text {
+    display:block;
+}
+
+#solar.on circle {
+  stroke: #fad000;
+}
+
+#house.on circle {
+   stroke: #00b3f6;
+}
+
+#powerwall.on circle {
+   stroke: #00d700;
+}
+
+#grid.on circle {
+   stroke: #ffffff;
+}
+
+#lines rect.on {
+    display:block;
+}
+
+#lines g.on {
+    display:block;
+}
+
+#lines g circle {
+    stroke-opacity : 0.3;
+    stroke-width:10px;
+}
