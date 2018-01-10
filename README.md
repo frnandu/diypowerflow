@@ -1,4 +1,5 @@
 # diypowerflow
 DIY Powerflow
 
-dupa
+This a DIY version of the powerflow screen on the Tesla powerwall app.
+
