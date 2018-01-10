@@ -30,3 +30,10 @@ Daniel Römer from [DIY Tech and Repairs](http://diytechandrepairs.nu/raspberry-
 since it includes already a lot of scripts which you can use and adapt for your own specific situation.
 
 
+## TODO/ROADMAP:
+* make configuration stored in browser for userid, API key, feed names
+* improve dots animations, to better reflect current flowing
+* make additional energy sources, like generator and wind turbines.
+* ...? what ideas/suggestions do you have? join in!
+
+
