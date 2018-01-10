@@ -23,7 +23,7 @@ Depending on your own gear/components you have for solar charging, inverters, po
 how you can get the values into emoncms is very specific to your own situation.
 
 I currently use MPP PCM60x charger (Solar), [Batrium BMS](https://www.batrium.com/) with a Shunt (Powerwall) and two SDM120 meters (House & Grid),
-and a raspberry PI to get the values from all those components.
+and a raspberry PI to get the values from all those components and post them to emoncms API.
 
 I will include more documentation (maybe some videos) explaining better how to do this exactly for people who need it.
 
