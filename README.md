@@ -22,7 +22,7 @@ like for example if you want to host the code in your system and maybe use value
 Depending on your own gear/components you have for solar charging, inverters, powerwall shunt BMS and house/grid meters,
 how you can get the values into emoncms is very specific to your own situation.
 
-I currently use MPP PCM60x charger (Solar), Batrium BMS with Shunt (Powerwall) and two SDM120 meters (House & Grid),
+I currently use MPP PCM60x charger (Solar), [Batrium BMS](https://www.batrium.com/) with a Shunt (Powerwall) and two SDM120 meters (House & Grid),
 and a raspberry PI to get the values from all those components.
 
 I will include more documentation (maybe some videos) explaining better how to do this exactly for people who need it.
