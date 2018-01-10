@@ -25,6 +25,8 @@ how you can get the values into emoncms is very specific to your own situation.
 I currently use MPP PCM60x charger (Solar), Batrium BMS with Shunt (Powerwall) and two SDM120 meters (House & Grid),
 and a raspberry PI to get the values from all those components.
 
+I will include more documentation (maybe some videos) explaining better how to do this exactly for people who need it.
+
 If you have the same or similar components (like other MPP inverters) I suggest you check out the ISO for the raspberry that
 Daniel Römer from [DIY Tech and Repairs](http://diytechandrepairs.nu/raspberry-solar/) has prepared,
 since it includes already a lot of scripts which you can use and adapt for your own specific situation.
