@@ -123,7 +123,7 @@ function refresh_ui() {
 
     if (grid_watt!=0) {
         $("#grid").addClass("on");
-        $("#grid_watt").text(grid_watt+" w");
+        $("#grid_watt").text(Math.round(grid_watt)+" w");
         $("#grid-line").addClass("on");
         if (grid_watt>0) {
             $("#grid-dot-out").addClass("on");
