@@ -7,7 +7,7 @@ var emon = "proxy.php?csurl=http://emoncms.org/feed/list.json?userid="+emoncms_u
 // feed names
 var solar_watt_name = "pcm60x";
 var solar_kwh_name = "pcm60x kwhd";
-var grid_watt_name = "sdm120";
+var grid_watt_name = "sdm120 watt";
 var grid_kwh_name = "grid kwh today";
 var house_watt_name = "house watt";
 var house_kwh_name = "house kwh today";
