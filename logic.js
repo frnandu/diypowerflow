@@ -1,9 +1,10 @@
 
-
+// ---- configuration ------
 var emoncms_userid = 20722;
 
 var emon = "proxy.php?csurl=http://emoncms.org/feed/list.json?userid="+emoncms_userid;
 
+var max_inactive_seconds = 180;
 
 // feed names
 var solar_watt_name = "pcm60x";
@@ -14,6 +15,9 @@ var house_watt_name = "house watt";
 var house_kwh_name = "house kwh today";
 var powerwall_watt_name = "Shunt Watt";
 var powerwall_soc_name = "SOC";
+
+
+//---------------------------------------------
 
 var solar_watt = 0;
 var solar_kwh = 0;
@@ -33,17 +37,27 @@ function loadEmoncmsValues() {
 }
 
 function updateValuesFromEmonFeed(data) {
+    var now = Math.round(new Date().getTime()/1000);
+
     for (var i = 0, len = data.length; i < len; i++) {
        // SOLAR
        if (data[i].name == solar_watt_name) {
-         solar_watt = data[i].value;
+         if(data[i].time + max_inactive_seconds >= now){
+            solar_watt = data[i].value
+         } else {
+            solar_watt = 0;
+         }
        }
        if (data[i].name == solar_kwh_name) {
          solar_kwh = data[i].value;
        }
         // GRID
        if (data[i].name == grid_watt_name) {
-         grid_watt = data[i].value;
+         if(data[i].time + max_inactive_seconds >= now){
+             grid_watt = data[i].value;
+         } else {
+            grid_watt = 0;
+         }
        }
        if (data[i].name == grid_kwh_name) {
          grid_kwh = data[i].value;
@@ -51,14 +65,22 @@ function updateValuesFromEmonFeed(data) {
 
         // HOUSE
        if (data[i].name == house_watt_name) {
-         house_watt = data[i].value;
+         if(data[i].time + max_inactive_seconds >= now){
+             house_watt = data[i].value;
+         } else {
+            house_watt = 0;
+         }
        }
        if (data[i].name == house_kwh_name) {
          house_kwh = data[i].value;
        }
         // POWERWALL
        if (data[i].name == powerwall_watt_name) {
-         powerwall_watt = data[i].value;
+         if(data[i].time + max_inactive_seconds >= now){
+            powerwall_watt = data[i].value;
+         } else {
+            powerwall_watt = 0;
+         }
        }
        if (data[i].name == powerwall_soc_name) {
          powerwall_soc = data[i].value;
