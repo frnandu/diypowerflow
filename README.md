@@ -5,6 +5,8 @@ This a DIY version of the powerflow screen on the Tesla powerwall app.
 
 It gets its values from MQTT topics and uses websockets for pushing the values into the client interface.
 
+It includes a solar kwh prediction mechanism which flexible solar panels configuration. It bases on Yr.no and darksky.net API forecasts.
+
 I currently use MPP PCM60x charger (Solar), [Batrium BMS](https://www.batrium.com/) with a Shunt (Powerwall) and two SDM120 meters (House & Grid),
 and a raspberry PI to get the values from all those components and post them to MQTT.
 
