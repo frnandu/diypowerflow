@@ -14,6 +14,21 @@ If you have the same or similar components (like other MPP inverters) I suggest 
 Daniel Römer from [DIY Tech and Repairs](http://diytechandrepairs.nu/raspberry-solar/) has prepared,
 since it includes already a lot of scripts which you can use and adapt for your own specific situation.
 
+## How to run it
+It requires a running MQTT server from which to get its power values. 
+Also it uses influx for the kWh values and powerwall SOC.
+
+Open project.js and configure it for your usecase.
+then run
+```
+npm install
+```
+to ensure all dependecies are available
+
+and then run
+```
+node project.js
+```
 
 ## TODO/ROADMAP:
 * use graphana graphs for detailed information on each component
