@@ -19,6 +19,7 @@ since it includes already a lot of scripts which you can use and adapt for your 
 ## How to run it
 It requires a running MQTT server from which to get its power values. 
 Also it uses influx for the kWh values and powerwall SOC.
+So make sure you have both installed and running somewhere in your network.
 
 Open project.js and configure it for your usecase.
 then run
