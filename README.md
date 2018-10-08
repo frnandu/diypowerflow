@@ -31,7 +31,7 @@ node project.js
 ```
 
 ## TODO/ROADMAP:
-* use graphana graphs for detailed information on each component
+* use grafana graphs for detailed information on each component
 * show detailed house consumption from sonoffs
 * improve dots animations, to better reflect current flowing
 * make additional energy sources, like generator and wind turbines.
