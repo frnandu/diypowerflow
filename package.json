@@ -1,0 +1,23 @@
+{
+  "name": "diypowerflow",
+  "version": "1.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Martins",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "influx": "^5.0.0-alpha.4",
+    "moment": "latest",
+    "mqtt": "^2.18.8",
+    "suncalc": "latest",
+    "sync-request": "latest",
+    "fast-xml-parser" : "latest",
+    "node-schedule" : "latest",
+    "socket.io": "^2.1.1"
+  }
+}

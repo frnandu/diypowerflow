@@ -1,13 +1,17 @@
 <html>
 <head>
+    <title>DIY powerflow</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="logic.js"></script>
 </head>
 <body>
 <h3 class="center">Solar</h3>
-<p id="solar_kwh" class="center">0 kWh</p>
+<p class="center" id="solar_kwh"> 0 kWh</p>
+<p class="center" id="solar_prediction">&nbsp;</p>
+
 <svg id="solar" height="130px" width="130px" class="off">
     <circle class="hollow" cx="50%" cy="50%" r="46%" fill="none" stroke-width="5%">
         <animate class="glow" attributeType="CSS" attributeName="r" begin="0s" dur="1.5s" repeatCount="indefinite" from="46%"
