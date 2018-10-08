@@ -29,6 +29,7 @@ and then run
 ```
 node project.js
 ```
+in order for solar prediction mechanism to use darksky.net, you have to get an API key from https://darksky.net/dev
 
 ## TODO/ROADMAP:
 * use grafana graphs for detailed information on each component
