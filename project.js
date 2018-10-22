@@ -1,6 +1,6 @@
 //*********************
 // BASIC configuration
-const mqtt_host = "mqtt";
+const mqtt_host = "localhost";
 const influx_host = "localhost";
 
 //**********************************************
