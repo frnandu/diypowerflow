@@ -32,6 +32,14 @@ and then run
 ```
 node project.js
 ```
+
+default port is 3333, change it in project.js if you need.
+
+and point your favorite browser to 
+```
+http://localhost:3333
+```
+
 in order for solar prediction mechanism to use darksky.net, you have to get an API key from https://darksky.net/dev
 
 ## TODO/ROADMAP:
