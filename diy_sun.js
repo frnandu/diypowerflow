@@ -76,8 +76,8 @@ function getYR(panels_cfg, lat, lon, msl, sunrise, sunset) {
                 clouds = 1.0;
             }
             var sunniness = 1.0 - clouds;
-            if (sunniness < 0.15) {
-                sunniness = 0.15;
+            if (sunniness < 0.05) {
+                sunniness = 0.05;
             }
             var hourWh = calculateHourWh(panels_cfg, lat, lon, sunrise, sunset, sunniness,hour);
             totalWh += hourWh;
@@ -101,8 +101,8 @@ function getDarksky(panels_cfg, lat, lon, darkskyApi, sunrise, sunset) {
             var clouds = time.cloudCover;
 
             var sunniness = 1.0 - clouds;
-            if (sunniness < 0.15) {
-                sunniness = 0.15;
+            if (sunniness < 0.05) {
+                sunniness = 0.05;
             }
 
             var hourWh = calculateHourWh(panels_cfg, lat, lon, sunrise, sunset, sunniness,hour);
