@@ -218,6 +218,11 @@ socket.on('solar', function(data) {
     refresh_ui();
 });
 
+socket.on('grid', function(data) {
+    grid_watt = parseInt(data.message);
+    refresh_ui();
+});
+
 socket.on("solar prediction", function(data){
     $("#solar_prediction").text(data.message);
 });
