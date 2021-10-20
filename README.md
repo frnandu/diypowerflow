@@ -1,6 +1,8 @@
 # diypowerflow
 DIY Powerflow
 
+![alt text](https://github.com/frnandu/diypowerflow/blob/master/diypowerflow.PNG?raw=true)
+
 This a DIY version of the powerflow screen on the Tesla powerwall app.
 
 It gets its values from MQTT topics and uses websockets for pushing the values into the client interface.
